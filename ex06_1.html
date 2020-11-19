@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About me</title>
+    <style>
+        /*
+        padding은 총 4방향으로 설정가능하며 박스안의 여백을 설정하는 태그. 
+        padding: top right bottom left 시계방향으로 수치를입력하면된다.
+        span은 가로배치
+        div는 세로배치
+        */
+        body{background-color: #333333;}
+        #wrap{width: 960px; margin-left: auto;margin-right: auto;}
+        #art_left{width: 240px;background-color: #dddddd;height: 980px;float:left;padding:20px 40px 0 40px;}
+        #art_right{width: 560px;background-color: #ffffff;height: 960px;float:right;padding: 40px 60px 0 20px;}
+        img{width: 240px;margin-bottom: 30px;}
+        div{padding-left: 40px;}
+        h1{font-size: 20px; text-align: center;margin-bottom: 30px;cursor: pointer;}
+        h1>span{font-size:32px;}
+        #art_left>#first_p{color: #666666;margin-bottom: 90px;}
+        #art_left>p{margin-bottom: 30px;}
+        hr{margin:30px 0 20px 0;}
+        li{margin-bottom: 20px;}
+        ul>li>ul{margin-top: 16px;}
+        ul>li>ul>li{font-size: 14px;margin-bottom: 10px;}
+        #who_am_i{padding-left: 20px;line-height: 32px;}
+        #who_am_i>strong{font-weight: 500;background-color:yellow;}
+        #table_p{text-align: center;}
+        table{
+            width: 500px;
+            margin: -14px auto 0;
+            border: 1px solid green;
+            border-collapse: collapse;
+        }
+        #first_tr{
+            background-color: grey;
+        }
+        #first_tr>td{font-weight: 900;}
+        td{border: 1px solid black;padding: 10px;font-size: 14px;text-align: center;}
+        a{color: #ff0000;text-decoration: none;}
+    </style>
+</head>
+<body>
+    <section id="wrap">
+       <article id="art_left">
+           <img src="./images/hotdog01.jpg" alt="강아지">
+           <h1><span>S</span>EOUNGHO <span>J</span>EUNG</h1>
+           <p id="first_p">
+            오늘은 남은 인생을 시작하는 첫날이다.   
+           </p>
+           <p>
+               Seoul, Korea
+           </p>
+           <p>
+               tkdqja0517@gmail.com
+           </p>
+           <h2>SNS</h2>
+       </article> 
+       <article id="art_right">
+           <div>
+            <h2>Who am I?</h2>
+            <p id="who_am_i">
+            <strong>웹 디자인과 웹 퍼블리싱에 관심이 많습니다.</strong> 현재 신림에서 열심히 공부중입니다.
+            </p>            
+           </div>
+           <hr>
+           <div>
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    웹 디자인
+                    <ul>
+                        <li>
+                            <a href="./ex07.html">포토샵</a>
+                        </li>
+                        <li>
+                            <a href="./ex08.html">일러스트</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    웹 퍼블리싱   
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>javaScript</li>
+                    </ul>
+                </li>
+            </ul>
+           </div>
+           <hr>
+           <div>
+            <h2>Education</h2>
+                <table>
+                    <p id="table_p">학력 사항</p>
+                   <tr id="first_tr">
+                       <td>출신학교</td>
+                       <td>전공</td>
+                       <td>기간</td>
+                       <td>구분</td>
+                   </tr>
+                   <tr>
+                       <td>백제예술대학교</td>
+                       <td>무대디자인과</td>
+                       <td>2015.3-2019.2</td>
+                       <td>졸업</td>
+                   </tr>
+                   <tr>
+                       <td>고려고등학교</td>
+                       <td>-</td>
+                       <td>2012.3-2015.2</td>
+                       <td>졸업</td>
+                   </tr>
+                </table>
+           </div>
+       </article>        
+    </section>
+</body>
+</html>
